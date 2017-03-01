@@ -1,4 +1,4 @@
 {
-"name":"June"
-"version:"1.0.0"
+"name":"June",
+"version:"1.0.0",
 }
