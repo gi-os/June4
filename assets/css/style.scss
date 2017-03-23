@@ -3,5 +3,8 @@
 
 @import "{{ site.theme }}";
 h1{
-font-color:#30bdff;
+color:#30bdff;
+}
+.page-header {
+    background-image: linear-gradient(120deg, #30bdff, #159957);
 }
