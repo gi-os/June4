@@ -24,7 +24,7 @@ var co = "Gi-OS" //your company name!
 var wake = "june";//lowercase, wake word ("june" boot)
 var nick = "June"; //Nick name (Hi! I'm "June"!)
 var name = "June4";//Full name ("June4" Now powering on...)
-var token = "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+var token = "YOUR TOKEN"
 //other vars are somewhere else in the code (sorry! it only works there!)
 function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
