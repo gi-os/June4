@@ -2,9 +2,21 @@
 ---
 
 @import "{{ site.theme }}";
-h1{
-color:#30bdff;
+
+
+    .main-content h1{
+        color:#30bdff;
+}
+    .main-content h2{
+        color:#30bdff;
+}
+    .main-content h3{
+        color:#30bdff;
+}
+    .main-content h4{
+        color:#30bdff;
 }
 .page-header {
     background-image: linear-gradient(120deg, #30bdff, #159957);
+    color:#fff;
 }
