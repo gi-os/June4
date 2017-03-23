@@ -182,7 +182,7 @@ client.Dispatcher.on(Events.MESSAGE_CREATE, e => {
 
 
 		//tell owner
-		allvar();
+
 	} else if (e.message.content.toLowerCase().startsWith(wake + " tell "+ownerwake)) {
 
 
