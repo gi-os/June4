@@ -24,13 +24,14 @@ var co = "Gi-OS" //your company name!
 var wake = "june";//lowercase, wake word ("june" boot)
 var nick = "June"; //Nick name (Hi! I'm "June"!)
 var name = "June4";//Full name ("June4" Now powering on...)
+var token = "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
 //other vars are somewhere else in the code (sorry! it only works there!)
 function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
 client.connect({
-	token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+	token: token
 
 });
 
@@ -349,7 +350,7 @@ e.message.channel.sendMessage("", false, {
 			console.log(client.User.username + " is now being disconnected.");
 			setTimeout(function() {
 				client.disconnect({
-					token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+					token: token
 				});
 
 			}, 500);
@@ -399,13 +400,13 @@ e.message.channel.sendMessage("", false, {
 			setTimeout(function() {
 
 				client.disconnect({
-					token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+					token: token
 				});
 
 			}, 500);
 			setTimeout(function() {
 				client.connect({
-					token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+					token: token
 				});
 				e.message.channel.sendMessage("", false, {
 					color: 0x8ff442,
@@ -536,13 +537,13 @@ setInterval(function(){
       setTimeout(function() {
 
         client.disconnect({
-          token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+          token: token
         });
 
       }, 100);
       setTimeout(function() {
         client.connect({
-          token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+          token: token
         });
 
 
