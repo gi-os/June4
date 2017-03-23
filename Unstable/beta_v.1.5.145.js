@@ -92,7 +92,7 @@ client.Users.get(ownerid).openDM().then(function(dm) {
 
 		fields: [{
 			name: "Good morning "+ownernick+", "+name+" is now online!",
-			value: "-Game Name set. \n-Functions ready. \n-Conection to "+owner+" found.\n-Personality Installed \n-"+"Identifier number: "+number +"\n-"+ version
+			value: "- Identifier number: "+number +"\n-"+ version
 		}],
 		footer: {
 			text: " - Developed by "+co+" inc."
@@ -104,14 +104,6 @@ client.Users.get(ownerid).openDM().then(function(dm) {
 	client.User.setGame("Ask me for Help!");
 });
 client.Dispatcher.on(Events.MESSAGE_CREATE, e => {
-	//VARS---------------------------------------------------------------
-
-	function allvar() {
-		var note = e.message.content;
-
-		var iambluid = client.Users.get("132960971231723520");
-	}
-	//VARS END(idk why it has to be here)--------------------------------
 
 
 //CONVERSATION
@@ -534,6 +526,24 @@ footer: {
 	} else {}
 setInterval(function(){
   console.log(client.User.username + " is now doing a refresh");
+	client.Users.get(ownerid).openDM().then(function(dm) {
+	dm.sendMessage("", false, {
+		color: 0x30bdff,
+		author: {
+
+			name: ""
+		},
+
+		fields: [{
+			name: "June is now doing a refresh"
+			value: "``` \n     ██ ██    ██ ███    ██ ███████ ██   ██ \n     ██ ██    ██ ████   ██ ██      ██   ██ \n     ██ ██    ██ ██ ██  ██ █████   ███████ \n     ██ ██    ██ ██ ██  ██ █████   ███████ \n██   ██ ██    ██ ██  ██ ██ ██           ██ \n █████   ██████  ██   ████ ███████      ██ \n ```",
+		}],
+		footer: {
+			text: " - Developed by "+co+" inc."
+		}
+
+	});
+});
       setTimeout(function() {
 
         client.disconnect({
