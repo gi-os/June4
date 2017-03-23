@@ -12,6 +12,7 @@ var version = "v1.5.145 // Hosted by Gi-OS Servers"; //version of june
 //Other important things
 var test = "FALSE"; //Is this bot avaliable for public use?
 var number = randomIntFromInterval(1,100);
+var token = "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
 //users name
 var owner = "Giovanni Lupo"; //Your full name
 var ownerwake = "gio" //Your Nick Name Lowercase
@@ -30,7 +31,7 @@ function randomIntFromInterval(min,max) {
 }
 
 client.connect({
-	token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+	token: token
 
 });
 
@@ -349,7 +350,7 @@ e.message.channel.sendMessage("", false, {
 			console.log(client.User.username + " is now being disconnected.");
 			setTimeout(function() {
 				client.disconnect({
-					token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+					token: token
 				});
 
 			}, 500);
@@ -399,13 +400,13 @@ e.message.channel.sendMessage("", false, {
 			setTimeout(function() {
 
 				client.disconnect({
-					token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+					token: token
 				});
 
 			}, 500);
 			setTimeout(function() {
 				client.connect({
-					token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+					token: token
 				});
 				e.message.channel.sendMessage("", false, {
 					color: 0x8ff442,
@@ -536,13 +537,13 @@ setInterval(function(){
       setTimeout(function() {
 
         client.disconnect({
-          token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+          token: token
         });
 
       }, 100);
       setTimeout(function() {
         client.connect({
-          token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+          token: token
         });
 
 
