@@ -8,9 +8,9 @@ var client = new Discordie();
 //version
 var version = "v1.4.26";
 //users name
-var owner = "Giovanni Lupo"; //Your full name
-var ownerwake = "gio" //must be lowercase
-var ownernick = "Gio" //can have uppercase
+var owner = "FIRST LAST"; //Your full name
+var ownerwake = "first" //must be lowercase
+var ownernick = "First" //can have uppercase
 var ownerusername = "@USERNAME"
 var ownerid = "YOUR ID"
 var token = "TOKEN"
