@@ -33,12 +33,13 @@ Debug Commands
 | ------------- |:-------------:|
 | June disconnect| June Disconnects from all servers (Only owner can use this)       |
 | June reboot| June reboots systems (Only owner can use this)      |
-| June terminate| June crashes system, requires Identification #, most often used to terminate a specific instance of June4 (Only owner can use this)      |
+| June terminate ###| June crashes system, requires Identification #, most often used to terminate a specific instance of June4 (Only owner can use this)      |
 
-# About June4 Terminate
+## About June4 Terminate
 
 June4 Terminate is a command that allows the owner to turn off a specific june, this allows the Owner to test multiple junes at once.
-On boot June4 will send you a message telling you that it has powered on, it will give you the 
+On boot June4 will send you a message telling you that it has powered on, it will give you the Identification Number, this number is used to tell which june to accept the termination command.  
+---
 # How to set Up June4
 
 To use June you need to host her on your own server as she is a personalised bot made for specifically you.
