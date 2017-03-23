@@ -1,5 +1,5 @@
 //Developed by Gi-OS
-
+//based off June4 base 3 (1.5.144)
 
 var Discordie = require("discordie");
 var Events = Discordie.Events;
@@ -10,14 +10,14 @@ var client = new Discordie({
 //version
 var version = "v1.5.144"; //version of june
 //Other important things
-var test = "FALSE"; //Is this bot avaliable for public use?
+var test = "TRUE"; //Is this bot avaliable for public use?
 var number = randomIntFromInterval(1,100);
 //users name
-var owner = "Giovanni Lupo"; //Your full name
-var ownerwake = "gio" //Your Nick Name Lowercase
-var ownernick = "Gio" //Your Nick Name Uppercase
-var ownerusername = "@Gi-OS" //Your User Name
-var ownerid = "279447694240382977" //Your ID
+var owner = "FIRST LAST"; //Your full name
+var ownerwake = "first" //Your Nick Name Lowercase
+var ownernick = "First" //Your Nick Name Uppercase
+var ownerusername = "@USER" //Your User Name
+var ownerid = "ID#" //Your ID
 //company
 var co = "Gi-OS" //your company name!
 //Bot's Name
