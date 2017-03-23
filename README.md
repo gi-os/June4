@@ -47,3 +47,6 @@ To use June you need to host her on your own server as she is a personalised bot
 1. Download the most recent June4 Base, these are recomended versions of june with the least bugs.
 2. Change all of the variables.
 3. Change your token, and your owner ID
+4. Open terminal and type "   npm install discordie   "
+5. Now type node "   LOCATION_OF_FILE   "
+6. June4 should be up and running!
