@@ -39,7 +39,9 @@ Debug Commands
 
 June4 Terminate is a command that allows the owner to turn off a specific june, this allows the Owner to test multiple junes at once.
 On boot June4 will send you a message telling you that it has powered on, it will give you the Identification Number, this number is used to tell which june to accept the termination command.  
+
 ---
+
 # How to set Up June4
 
 To use June you need to host her on your own server as she is a personalised bot made for specifically you.
