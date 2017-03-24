@@ -291,7 +291,7 @@ e.message.author.openDM().then(function(dm) {
 			fields: [{
 				name: "Commands",
 				value: "-"+nick+" Help\t\"Opens Help Menu\" \n-"+ nick+" Status\t\""+nick+" gives status on systems\" \n-"+nick+" Boot\t\"Opens Boot Menu\"\n-"+nick+" About\t\"Short bio of "+nick
-				+"\"\n-"+nick+" Tell "+ownernick+" (XXX)\t\""+nick+" sends message to "+ownerusername+"\"\n-"+nick+" note (XXX)\t\""+nick+" sends you a note.\"\n-"+nick+" Alarm @XXX\t\"Notifies writer when user goes online\"\n-"
+				+"\"\n-"+nick+" Tell "+ownernick+" (XXX)\t\""+nick+" sends message to "+ownerusername+"\"\n-"+nick+" note (XXX)\t\""+nick+" sends you a note.\"\n-"
 				+nick+" Terminate\t\"Force shut down of "+nick+" (only owner can use this)\"\n-"+ nick + " Reboot\t\"reboots "+ nick+ " incase of errors (only owner can use this)\"\n-"+nick+" Disconnect\t\"Disconnects "+nick+" from database (only owner can use this)\""
 
 			}],
