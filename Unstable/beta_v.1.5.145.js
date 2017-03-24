@@ -92,7 +92,8 @@ client.Users.get(ownerid).openDM().then(function(dm) {
 
 		fields: [{
 			name: "Good morning "+ownernick+", "+name+" is now online!",
-			value: "- Identifier number: "+number +"\n-"+ version
+			value: "\n```     ██ ██    ██ ███    ██ ███████     \n     ██ ██    ██ ████   ██ ██ \n     ██ ██    ██ ██ ██  ██ █████"
+			+"\n██   ██ ██    ██ ██  ██ ██ ██ \n █████   ██████  ██   ████ ███████   ```- Identifier number: "+number +"\n-"+ version,
 		}],
 		footer: {
 			text: " - Developed by "+co+" inc."
@@ -535,8 +536,8 @@ setInterval(function(){
 		},
 
 		fields: [{
-			name: "June is now doing a refresh"
-			value: "``` \n     ██ ██    ██ ███    ██ ███████ ██   ██ \n     ██ ██    ██ ████   ██ ██      ██   ██ \n     ██ ██    ██ ██ ██  ██ █████   ███████ \n     ██ ██    ██ ██ ██  ██ █████   ███████ \n██   ██ ██    ██ ██  ██ ██ ██           ██ \n █████   ██████  ██   ████ ███████      ██ \n ```",
+			name: "June is now doing a refresh",
+  value:"Please wait..."
 		}],
 		footer: {
 			text: " - Developed by "+co+" inc."
@@ -558,6 +559,6 @@ setInterval(function(){
 
 
    }, 500);
-  }, 51840000);
+ }, 51840000);
 
 });
