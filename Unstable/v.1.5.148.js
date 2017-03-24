@@ -92,8 +92,7 @@ client.Users.get(ownerid).openDM().then(function(dm) {
 
 		fields: [{
 			name: "Good morning "+ownernick+", "+name+" is now online!",
-			value: "\n```     ██ ██    ██ ███    ██ ███████     \n     ██ ██    ██ ████   ██ ██ \n     ██ ██    ██ ██ ██  ██ █████"
-			+"\n██   ██ ██    ██ ██  ██ ██ ██ \n █████   ██████  ██   ████ ███████   ```- Identifier number: "+number +"\n-"+ version,
+			value: "- Identifier number: "+ number +"\n-"+ version,
 		}],
 		footer: {
 			text: " - Developed by "+co+" inc."
