@@ -8,7 +8,7 @@ var client = new Discordie({
 });
 
 //version
-var version = "v1.5.147 // Hosted by Gi-OS Servers"; //version of june
+var version = "v1.5.148 // Hosted by Gi-OS Servers"; //version of june
 //Other important things
 var test = "FALSE"; //Is this bot avaliable for public use?
 var number = randomIntFromInterval(1,100);
@@ -537,7 +537,7 @@ setInterval(function(){
 
 		fields: [{
 			name: "June is now doing a refresh",
-  value:"Please wait..."
+                        value:"Please wait...",
 		}],
 		footer: {
 			text: " - Developed by "+co+" inc."
