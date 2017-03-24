@@ -528,23 +528,6 @@ footer: {
 
 	} else {
 
-setInterval(function(){
-  console.log(client.User.username + " is now doing a refresh");
-      setTimeout(function() {
-
-        client.disconnect({
-          token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
-        });
-
-      }, 0);
-      setTimeout(function() {
-        client.connect({
-          token: "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
-        });
-
-
-    }, 500);
-    }, 518400000);
 	}
 
 });
