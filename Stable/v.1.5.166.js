@@ -8,11 +8,11 @@ var client = new Discordie({
 });
 
 //version
-var version = "v1.5.149 // Hosted by Gi-OS Servers"; //version of june
+var version = "v1.5.166 // Hosted by Gi-OS Servers"; //version of june
 //Other important things
 var test = "FALSE"; //Is this bot avaliable for public use?
 var number = randomIntFromInterval(1,100);
-var token = "Mjg2Mjg4MjE0OTI5NTcxODQw.C5eiPg.-Q2fmuIV_34LLCt87KeMFI8uraQ"
+var token = "Mjg2Mjg4MjE0OTI5NTcxODQw.C7rs_A.PGSliK5snru2JoSpTfqm3W_CGDM"
 //users name
 var owner = "Giovanni Lupo"; //Your full name
 var ownerwake = "gio" //Your Nick Name Lowercase
@@ -92,7 +92,8 @@ client.Users.get(ownerid).openDM().then(function(dm) {
 
 		fields: [{
 			name: "Good morning "+ownernick+", "+name+" is now online!",
-			value: "- Identifier number: "+ number +"\n-"+ version,
+			value: "\n```     ██ ██    ██ ███    ██ ███████     \n     ██ ██    ██ ████   ██ ██ \n     ██ ██    ██ ██ ██  ██ █████"
+			+"\n██   ██ ██    ██ ██  ██ ██ ██ \n █████   ██████  ██   ████ ███████   ```- Identifier number: "+number +"\n-"+ version,
 		}],
 		footer: {
 			text: " - Developed by "+co+" inc."
@@ -290,7 +291,7 @@ e.message.author.openDM().then(function(dm) {
 			fields: [{
 				name: "Commands",
 				value: "-"+nick+" Help\t\"Opens Help Menu\" \n-"+ nick+" Status\t\""+nick+" gives status on systems\" \n-"+nick+" Boot\t\"Opens Boot Menu\"\n-"+nick+" About\t\"Short bio of "+nick
-				+"\"\n-"+nick+" Tell "+ownernick+" (XXX)\t\""+nick+" sends message to "+ownerusername+"\"\n-"+nick+" note (XXX)\t\""+nick+" sends you a note.\"\n-"
+				+"\"\n-"+nick+" Tell "+ownernick+" (XXX)\t\""+nick+" sends message to "+ownerusername+"\"\n-"+nick+" note (XXX)\t\""+nick+" sends you a note.\"\n-"+nick+" Alarm @XXX\t\"Notifies writer when user goes online\"\n-"
 				+nick+" Terminate\t\"Force shut down of "+nick+" (only owner can use this)\"\n-"+ nick + " Reboot\t\"reboots "+ nick+ " incase of errors (only owner can use this)\"\n-"+nick+" Disconnect\t\"Disconnects "+nick+" from database (only owner can use this)\""
 
 			}],
@@ -536,7 +537,7 @@ setInterval(function(){
 
 		fields: [{
 			name: "June is now doing a refresh",
-                        value:"Please wait...",
+  value:"Please wait..."
 		}],
 		footer: {
 			text: " - Developed by "+co+" inc."
