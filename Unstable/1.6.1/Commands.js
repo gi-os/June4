@@ -1,4 +1,4 @@
-
+function commandsj4() {
 	//terminal text
 	setTimeout(function(){
 	console.log("     ██ ██    ██ ███    ██ ███████ ██   ██ "),
@@ -524,3 +524,4 @@ setInterval(function(){
  }, 51840000);
 
 });
+}
