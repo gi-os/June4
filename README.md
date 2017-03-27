@@ -5,7 +5,7 @@ June4 is a discord bot that is built to act simular to a sercretary, and can be 
 
 | *Stable Version*  | *Last Update* | *Base Version*| *Unstable Version* |
 | ------------- |----------|--------------|-----------------|
-| 1.5.144       |March 2017| (2) 1.5.100 | 1.5.147 |
+| 1.5.166       |March 2017| (2) 1.5.100 | 1.6 |
 
 ---
 
