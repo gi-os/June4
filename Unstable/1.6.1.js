@@ -8,11 +8,12 @@ var client = new Discordie({
 });
 
 //version
-var version = "v1.6 // Hosted by Gi-OS Servers"; //version of june
+var version = "v1.6.1"; //version of june
+var host = "Gi-OS Servers"
 //Other important things
 var test = "FALSE"; //Is this bot avaliable for public use?
 var number = randomIntFromInterval(1,100);
-var token = "Mjg2Mjg4MjE0OTI5NTcxODQw.C7rs_A.PGSliK5snru2JoSpTfqm3W_CGDM"
+var token = "INSERT TOKEN HERE!"
 //users name
 var owner = "Giovanni Lupo"; //Your full name
 var ownerwake = "gio" //Your Nick Name Lowercase
