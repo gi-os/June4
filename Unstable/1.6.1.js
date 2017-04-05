@@ -8,12 +8,12 @@ var client = new Discordie({
 });
 
 //version
-var version = "v1.6.1.1"; //version of june
+var version = "v1.6.1.2"; //version of june
 var host = "Gi-OS Servers"
 //Other important things
 var test = "FALSE"; //Is this bot avaliable for public use?
-var number = randomIntFromInterval(1,100);
-var token = "INSERT TOKEN HERE!"
+var number = randomIntFromInterval(1,100);// do not edit please
+var token = "INSERT TOKEN HERE!"//Put your token here
 //users name
 var owner = "Giovanni Lupo"; //Your full name
 var ownerwake = "gio" //Your Nick Name Lowercase
@@ -32,10 +32,8 @@ function randomIntFromInterval(min,max) {
 }
 
 
-var Discordie = require("discordie");
-var Events = Discordie.Events;
-const Commands = require('./Unstable/1.6.1/Commands.js').Commands
-const Variables = require('./Unstable/1.6.1/Variables.js').Variables
+var Discordie = require("discordie"); //Do not edit
+var Events = Discordie.Events;//Do not edit
 var client = new Discordie({
 
   autoReconnect: true,
@@ -94,6 +92,14 @@ function commandsj4() {
 }, 1000);
 }, 4000);
 }, 00);
+	//when someone joins
+	client.on("giuldCreate", (guild) => {
+		console.log(client.user.username + " was invited to and joined " + guild.name);
+	});
+	client.on("guildMemberAdd", (guild, member) => {
+		console.log(member.user.userame + " joined " + guild.name);
+	});
+	//morning
 client.Users.get(ownerid).openDM().then(function(dm) {
 	dm.sendMessage("", false, {
 		color: 0x30bdff,
