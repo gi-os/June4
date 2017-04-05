@@ -9,7 +9,7 @@ June4 is a discord bot that is built to act simular to a sercretary, and can be 
 
 ---
 
-# June4 Commands
+# June4 Commands as of 1.6.1.2
 
 ### Secretary commands
 
@@ -26,7 +26,7 @@ June4 is a discord bot that is built to act simular to a sercretary, and can be 
 | June status| Loads up status menu       |
 | June help| Loads up help menu       |
 | June about| Loads up bio       |
-
+| June info| Loads up admin info      |
 ### Debug Commands
 
 | Command       | Use         |
