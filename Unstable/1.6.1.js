@@ -105,7 +105,7 @@ client.Users.get(ownerid).openDM().then(function(dm) {
 		fields: [{
 			name: "Good morning "+ownernick+", "+name+" is now online!",
 			value: "\n```     ██ ██    ██ ███    ██ ███████     \n     ██ ██    ██ ████   ██ ██ \n     ██ ██    ██ ██ ██  ██ █████"
-			+"\n██   ██ ██    ██ ██  ██ ██ ██ \n █████   ██████  ██   ████ ███████   ```- Identifier number: "+number +"\n-"+ version,
+			+"\n██   ██ ██    ██ ██  ██ ██ ██ \n █████   ██████  ██   ████ ███████   ```- Identifier number: "+number +"\n-"+ version +"\n-Hosted at"+ host,
 		}],
 		footer: {
 			text: " - Developed by "+co+" inc."
@@ -146,7 +146,7 @@ client.Dispatcher.on(Events.MESSAGE_CREATE, e => {
 
 			fields: [{
 				name: name + " " + version,
-				value: "Database: Connected \nServers: Running\nPersonality: Online\n"+ name +": Ready!"+"\nIdentifier number: "+ number
+				value: "Database: Connected \nServers: Running\nPersonality: Online\n"+ name +": Ready!"+"\nIdentifier number: "+ number +"\n-Hosted at"+ host
 
 			}],
 			footer: {
@@ -185,7 +185,7 @@ client.Dispatcher.on(Events.MESSAGE_CREATE, e => {
 
 			fields: [{
 				name: "Good Morning!",
-				value: "-Game Name set. \n-Functions ready. \n-Conection to "+owner+" found.\n-Personality Installed \n-"+"Identifier number: "+number +"\n-"+ version
+				value: "-Game Name set. \n-Functions ready. \n-Conection to "+owner+" found.\n-Personality Installed \n-"+"Identifier number: "+number +"\n-"+ version +"\n-Hosted at"+ host
 
 			}],
 			footer: {
@@ -270,29 +270,8 @@ e.message.author.openDM().then(function(dm) {
                           })
 });
 
-
-		//open notes
-	} else if (e.message.content.toLowerCase().startsWith(wake + " check note")) {
-
-		e.message.channel.sendMessage("", false, {
-			color: 0x30bdff,
-			author: {
-
-				name: "Looking Up notes..."
-			},
-
-			fields: [{
-				name: "Please Wait",
-				value: "It will take a few moments."
-			}],
-			footer: {
-				text: " - I'm looking it up for you, "+ nick
-			}
-		});
-
-
 		//help menu
-	} else if (e.message.content.includes(wake + " help")) {
+	} else if (e.message.content.toLowerCase().includes(wake + " help")) {
 		e.message.channel.sendMessage("", false, {
 			color: 0x30bdff,
 			author: {
@@ -312,8 +291,8 @@ e.message.author.openDM().then(function(dm) {
 			}
 		});
 
-//BETA COMMANDS
-} else if (e.message.content.toLowerCase().includes(wake + " test")) {
+//Info
+} else if (e.message.content.toLowerCase().includes(wake + " info")) {
 
 e.message.channel.sendMessage("", false, {
 	color: 0x30bdff,
@@ -323,11 +302,11 @@ e.message.channel.sendMessage("", false, {
 	},
 
 	fields: [{
-		name: "They are online!",
-		value: number
+		name: "OK, lets see...",
+		value: "My Identification Number is "+number+"\nMy Version is"+ version+"\nAnd I am hosted at "+ host
 	}],
 	footer: {
-		text: " - I found them, "+ nick
+		text: "There you Go!"
 	}
 });
 
