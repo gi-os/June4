@@ -145,7 +145,7 @@ client.Dispatcher.on(Events.MESSAGE_CREATE, e => {
 
 			}],
 			footer: {
-				text: "Developed by "+co+" inc. "
+				text: "Developed by "+co+" inc. Based on June Base "
 			}
 		});
 
@@ -164,7 +164,7 @@ client.Dispatcher.on(Events.MESSAGE_CREATE, e => {
 
 			}],
 			footer: {
-				text: "Developed by "+co+" inc "
+				text: "Developed by "+co+" inc. "
 			}
 		});
 
@@ -303,7 +303,7 @@ e.message.author.openDM().then(function(dm) {
 
 			}],
 			footer: {
-				text: "Extras: "+nick+" hello/"+nick+" wake/Thanks "+nick
+				text: "Extras: "+nick+" hello/"+nick+" wake/Thanks "+nick+" based on June Base 3
 			}
 		});
 
