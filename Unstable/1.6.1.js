@@ -309,6 +309,17 @@ e.message.channel.sendMessage("", false, {
 		text: "There you Go!"
 	}
 });
+} else if (e.message.content.toLowerCase().includes(wake + " server")) {
+var list = "**Server List:** \r\n";
+var numb = 1;
+console.log("Recieved Servers command \r\n");
+client.Guilds.map((self) => {
+	list += numb ") " + self.name + "\r\n";
+	numb = numb+1;
+
+});
+	e.message.channel.sendMessage(list);
+});
 
 
 		//ADMIN COMMANDS
