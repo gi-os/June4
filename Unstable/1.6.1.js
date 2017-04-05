@@ -8,7 +8,7 @@ var client = new Discordie({
 });
 
 //version
-var version = "v1.6.1"; //version of june
+var version = "v1.6.1.1"; //version of june
 var host = "Gi-OS Servers"
 //Other important things
 var test = "FALSE"; //Is this bot avaliable for public use?
@@ -104,8 +104,7 @@ client.Users.get(ownerid).openDM().then(function(dm) {
 
 		fields: [{
 			name: "Good morning "+ownernick+", "+name+" is now online!",
-			value: "\n```     ██ ██    ██ ███    ██ ███████     \n     ██ ██    ██ ████   ██ ██ \n     ██ ██    ██ ██ ██  ██ █████"
-			+"\n██   ██ ██    ██ ██  ██ ██ ██ \n █████   ██████  ██   ████ ███████   ```- Identifier number: "+number +"\n-"+ version +"\n-Hosted at"+ host,
+			value: "- Identifier number: "+number +"\n-"+ version +"\n-Hosted at"+ host,
 		}],
 		footer: {
 			text: " - Developed by "+co+" inc."
