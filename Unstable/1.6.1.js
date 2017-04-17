@@ -8,12 +8,12 @@ var client = new Discordie({
 });
 
 //version
-var version = "v1.6.1.3"; //version of june
+var version = "v1.6.1.4"; //version of june
 var host = "Gi-OS Servers"
 //Other important things
 var test = "FALSE"; //Is this bot avaliable for public use?
 var number = randomIntFromInterval(1,100);// do not edit please
-var token = "INSERT TOKEN HERE!"//Put your token here
+var token = "Mjg2Mjg4MjE0OTI5NTcxODQw.C9bF8A.OiAO_N1Gm8KIBrOQtszwa9jBZfE"//Put your token here
 //users name
 var owner = "Giovanni Lupo"; //Your full name
 var ownerwake = "gio" //Your Nick Name Lowercase
@@ -32,21 +32,13 @@ function randomIntFromInterval(min,max) {
 }
 
 
-var Discordie = require("discordie"); //Do not edit
-var Events = Discordie.Events;//Do not edit
-var client = new Discordie({
-
-  autoReconnect: true,
-});
-
-
 client.connect({
 	token: token
 
 });
 
 client.Dispatcher.on(Events.GATEWAY_READY, e => {
-function commandsj4() {
+
 	//terminal text
 	setTimeout(function(){
 	console.log("     ██ ██    ██ ███    ██ ███████ ██   ██ "),
@@ -54,7 +46,6 @@ function commandsj4() {
 	console.log("     ██ ██    ██ ██ ██  ██ █████   ███████ "),
 	console.log("██   ██ ██    ██ ██  ██ ██ ██           ██ "),
 	console.log(" █████   ██████  ██   ████ ███████      ██ ");
-
 	console.log("Booting, Please wait...");
 	setTimeout(function(){
 	console.log("════════════");
@@ -92,8 +83,6 @@ function commandsj4() {
 }, 1000);
 }, 4000);
 }, 00);
-
-	//morning
 client.Users.get(ownerid).openDM().then(function(dm) {
 	dm.sendMessage("", false, {
 		color: 0x30bdff,
@@ -104,7 +93,7 @@ client.Users.get(ownerid).openDM().then(function(dm) {
 
 		fields: [{
 			name: "Good morning "+ownernick+", "+name+" is now online!",
-			value: "- Identifier number: "+number +"\n-"+ version +"\n-Hosted at"+ host,
+			value: "-Game Name set. \n-Functions ready. \n-Conection to "+owner+" found.\n-Personality Installed \n-"+"Identifier number: "+number +"\n-"+ version
 		}],
 		footer: {
 			text: " - Developed by "+co+" inc."
@@ -145,7 +134,7 @@ client.Dispatcher.on(Events.MESSAGE_CREATE, e => {
 
 			fields: [{
 				name: name + " " + version,
-				value: "Database: Connected \nServers: Running\nPersonality: Online\n"+ name +": Ready!"+"\nIdentifier number: "+ number +"\n-Hosted at"+ host
+				value: "Database: Connected \nServers: Running\nPersonality: Online\n"+ name +": Ready!"+"\nIdentifier number: "+ number +"\n-Hosted at "+ host
 
 			}],
 			footer: {
@@ -184,7 +173,7 @@ client.Dispatcher.on(Events.MESSAGE_CREATE, e => {
 
 			fields: [{
 				name: "Good Morning!",
-				value: "-Game Name set. \n-Functions ready. \n-Conection to "+owner+" found.\n-Personality Installed \n-"+"Identifier number: "+number +"\n-"+ version +"\n-Hosted at"+ host
+				value: "-Game Name set. \n-Functions ready. \n-Conection to "+owner+" found.\n-Personality Installed \n-"+"Identifier number: "+number +"\n-"+ version +"\n-Hosted at "+ host
 
 			}],
 			footer: {
@@ -302,7 +291,7 @@ e.message.channel.sendMessage("", false, {
 
 	fields: [{
 		name: "OK, lets see...",
-		value: "My Identification Number is "+number+"\nMy Version is"+ version+"\nAnd I am hosted at "+ host
+		value: "My Identification Number is "+number+"\nMy Version is "+ version+"\nAnd I am hosted at "+ host
 	}],
 	footer: {
 		text: "There you Go!"
@@ -313,12 +302,12 @@ var list = "**Server List:** \r\n";
 var numb = 1;
 console.log("Recieved Servers command \r\n");
 client.Guilds.map((self) => {
-	list += numb ") " + self.name + "\r\n";
+	list += numb + ") " + self.name + "\r\n";
 	numb = numb+1;
 
 });
 	e.message.channel.sendMessage(list);
-});
+
 
 
 		//ADMIN COMMANDS
@@ -525,42 +514,8 @@ footer: {
 }
 
 
-	} else {}
-setInterval(function(){
-  console.log(client.User.username + " is now doing a refresh");
-	client.Users.get(ownerid).openDM().then(function(dm) {
-	dm.sendMessage("", false, {
-		color: 0x30bdff,
-		author: {
-
-			name: ""
-		},
-
-		fields: [{
-			name: "June is now doing a refresh",
-  value:"Please wait..."
-		}],
-		footer: {
-			text: " - Developed by "+co+" inc."
-		}
-
-	});
-});
-      setTimeout(function() {
-
-        client.disconnect({
-          token: token
-        });
-
-      }, 100);
-      setTimeout(function() {
-        client.connect({
-          token: token
-        });
 
 
-   }, 500);
- }, 51840000);
+}else{}
 
-});
-}
+})
